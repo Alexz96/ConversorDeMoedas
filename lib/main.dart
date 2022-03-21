@@ -4,11 +4,12 @@ import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 
-const request = "https://api.hgbrasil.com/finance?format=json&key=2330ff2a";
+const request = "https://api.hgbrasil.com/finance?key=2330ff2a";
 
 void main() async {
   runApp(MaterialApp(
     home: Home(),
+    debugShowCheckedModeBanner: false,
     theme: ThemeData(
         hintColor: Colors.amber,
         primaryColor: Colors.white,
